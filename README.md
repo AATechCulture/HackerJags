@@ -38,7 +38,8 @@ HackerJags
 **...point us to where you tell us about your solution 😄**
 
 ### Link to Demo Presentation 📽
-**...point us to your PPT or Canva slides 😍**
+[BE Smart Hackathon.pdf](https://github.com/AATechCulture/HackerJags/files/13257863/BE.Smart.Hackathon.pdf)
+
 
 ### Team Checklist due before 5p Saturday 11/4 ✅
 - [ ] Team photo
