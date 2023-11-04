@@ -1,5 +1,5 @@
 ___________
-# Project Name
+# AAiry
 
 ## Challenge Statement(s) Addressed 🎯
 How might we build an application that will help the Airline industry? 
