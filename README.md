@@ -8,19 +8,15 @@ ___________
 # Project Name
 
 ## Challenge Statement(s) Addressed 🎯
-**...include the challenge statement(s) the project worked to address**
+How might we build an application that will help the Airline industry? 
 
-Examples:
-* How might we decrease the United States chances of alien and monster attacks given what we know from popular alien and monster movies?
-* How might we make it possible for people in cities not to have to own a car by making car-sharing easier so that the environment will be less damaged and people can save money?
-* How might we ....
+
 
 ## Project Description 🤯
-**....at lease 3 sentences describing what the project does and how it works**
+We are modifying the American Airlines chatbot by having it curate effective and proactive answers rather than generating FAQ statements. We are doing this by GPT to create detailed and real-time responses. 
 
 ## Project Value 💰
-**....at lease 3 sentences describing your target customer and tangible benefits from your solution**
-
+By reviewing customer experiences, American Airlines customers like and prefer using the chatbot there are issues when it comes to generating helpful and resourceful responses such as book suggestions or account help. 
 
 ## Tech Overview 💻
 **... what tech was used to bring this project to life?**
@@ -32,16 +28,17 @@ Example:
 
 
 ### ✨ Contributors ✨
-**...tell the world who you and your team are 🙂**
-* Team member X (AAdvantage No)
-* Team member Y (AAdvantage No)
-* Team member Z (AAdvantage No)
+* Channijg Catchings  (L8JD280)
+* Kennedy Browne (AAdvantage No)
+* Murali Devi Katikala (AAdvantage No)
+* Kunal Janjirala (V49RC72)
+* Shwetha Ramadas (A0ld282)
 
 ### School Name 🏫
-The ABC School
+Southern University and A&M College 
 
 ### Team Name 🏷
-Coding Costars
+HackerJags
 
 ### Link to Video Pitch 📹
 **...point us to where you tell us about your solution 😄**
