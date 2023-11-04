@@ -24,7 +24,7 @@ Example:
 ### ✨ Contributors ✨
 * Channijg Catchings  (L8JD280)
 * Kennedy Browne (AAdvantage No)
-* Murali Devi Katikala (AAdvantage No)
+* Murali Devi Katikala (T59RC78)
 * Kunal Janjirala (V49RC72)
 * Shwetha Ramadas (A0ld282)
 
