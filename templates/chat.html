@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatbot</title>
+<style>
+     table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+  body { margin: 0; font-family: Arial, sans-serif; }
+  .chat-container { display: flex; flex-direction: column; height: 100vh; }
+  .header { background: #333; color: rgb(255, 255, 255); padding: 10px; text-align: center; }
+  .chat-box { flex-grow: 1; padding: 20px; background: #f9f9f9; overflow-y: scroll; }
+  .chat-entry { display: flex; margin-bottom: 10px; }
+  .bot-msg { background-color: #e0e0e0; padding: 10px; border-radius: 10px; }
+  .user-msg { margin-left: auto; background-color: #0084ff; color: white; padding: 10px; border-radius: 10px; }
+  .input-box { display: flex; padding: 10px; background: white; }
+  .input-box input { flex-grow: 1; padding: 10px; border: none; margin-right: 10px; }
+  .input-box button { padding: 10px 20px; background: #333; color: white; border: none; }
+  
+  .offer img {
+  width: 100%; 
+  height: auto; 
+  max-width: 1000px; 
+  max-height: 700px; /* Maximum height can be set while maintaining aspect ratio */
+  display: block; /* Ensures there are no unwanted margins around the image */
+  margin: 0 auto; /* Centers the image within the offer div if it's not full-width */
+  border-radius: 5px; /* Optional: Rounds the corners of the image */
+}
+
+.big-button {
+    padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px; /* Slightly rounded corners for aesthetics */
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+.big-button:hover {
+     background-color: #45a049;
+        }
+
+.offer {
+  background: #fff;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 500px;
+  display: flex; /* updated to use flexbox */
+  flex-direction: column; /* stack children vertically */
+  align-items: center; /* center items horizontally, in this case the flex items */
+  text-align: center; /* align text to the center for those elements that are not flex items */
+}
+
+  .header {
+    background: #1a2e5a; /* A dark blue color similar to airline branding */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+  }
+
+  .header1 {
+    background: #1a2e5a; /* A dark blue color similar to airline branding */
+    color: #fff;
+    padding: 10px 20px;
+    justify-content: space-between;
+    text-align: center;
+    
+  }
+
+  .header img {
+    width: 120px; /* Logo width */
+    height: auto;
+  }
+  .nav {
+    display: flex;
+  }
+  .nav-item {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .nav-item:hover, .nav-item:focus {
+    background-color: #4a5e8a; /* A lighter blue for hover/focus states */
+  }
+  .centered-text {
+  text-align: center;
+}
+
+</style>
+<script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img src="https://s202.q4cdn.com/986123435/files/doc_downloads/logos/american-airlines/THUMB-aa_aa__ahz_4cp_grd_pos-(1).png" alt="Airline Logo">
+        <nav class="nav">
+          <a href="#" class="nav-item">Book</a>
+          <a href="#" class="nav-item">Manage</a>
+          <a href="#" class="nav-item">Sign Up</a>
+          <a href="#" class="nav-item">Log In</a>
+          <a href="#" class="nav-item">Help</a>
+        </nav>
+      </div>
+      <div class="main-content">
+        <!-- Promotional offers with images -->
+        <div  class="offer">
+            <img src="https://cdn.loyaltylobby.com/wp-content/uploads/2021/10/American-Airlines-AAdvantage-Loyalty-Points.png">
+           <h2>Join AAdvantage®</h2>
+          <p>Become an AAdvantage® member and earn miles on every trip!</p>
+        </div>  
+        <div class="chat-container">
+  
+    <script src="sscript.js"></script>
+        
+<div class="chat-container">
+  <div class="header1">
+    <h4 class="centered-text">Chat with our Aairy..!</h4>
+  </div>
+  <div id="chat-box" class="chat-box">
+    <!-- Chat messages will appear here -->
+  </div>
+  <div class="input-box">
+    <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script>
+// Function to send a message
+function sendMessage() {
+  var input = document.getElementById("user-input");
+  var message = input.value.trim();
+  if(message === "") return; // Don't send empty messages
+
+  // Display the user message in the chat box
+  displayMessage(message, 'user');
+
+  // Make a request to your chatbot server here
+  // For example, using fetch to send message to your Flask server
+  fetch('/chat', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ message: message })
+})
+.then(response => response.json())
+.then(data => {
+  // Display bot response
+  displayMessage(data.response, 'bot');
+}).catch(error => {
+  console.error('Error:', error);
+});
+
+  // Clear the input box
+  input.value = "";
+}
+
+// Function to display a message in the chat box
+function displayMessage(message, sender) {
+  var chatBox = document.getElementById("chat-box");
+  var msgDiv = document.createElement("div");
+  msgDiv.classList.add("chat-entry");
+
+  var msgBubble = document.createElement("div");
+  msgBubble.textContent = message;
+  msgBubble.classList.add(sender === 'user' ? 'user-msg' : 'bot-msg');
+
+  msgDiv.appendChild(msgBubble);
+  chatBox.appendChild(msgDiv);
+
+  // Scroll to the bottom of the chat box
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+</script>
+</body>
+</html>

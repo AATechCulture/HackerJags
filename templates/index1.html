@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Information Dashboard</title>
+    <style>
+        table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+        body { font-family: Arial, sans-serif; }
+        #results { margin-top: 20px; white-space: pre; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Flight Information Dashboard</h1>
+
+    <div>
+        <input type="text" id="originCode" placeholder="Enter Source Code">
+        <input type="text" id="destinationCode" placeholder="Enter Destination Code">
+        <input type="date" id="flightDate">
+        <button id="airportBtn">Get Airport Details</button>
+        <button id="flightsBtn">Get Flights</button>
+    </div>
+
+    <div id="results">
+        <!-- Results will be displayed here -->
+    </div>
+
+    <script src="sscript.js"></script>
+</body>
+</html>
