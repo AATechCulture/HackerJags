@@ -46,12 +46,12 @@ https://github.com/AATechCulture/HackerJags/assets/118567338/75dd6cdf-399e-464d-
 
 
 ### Team Checklist due before 5p Saturday 11/4 ✅
-- [ ] Team photo
-- [ ] Team Slack channel
-- [ ] Communication established with mentor
-- [ ] Repo creation from this template
-- [ ] Hangar registration
-- [ ] Scavenger Hunt submission
+- [✅] Team photo
+- [✅] Team Slack channel
+- [✅] Communication established with mentor
+- [✅] Repo creation from this template
+- [✅] Hangar registration
+- [✅] Scavenger Hunt submission
 
 ### Project Checklist due before 10a Sunday 11/5 🏁
 - [ ] Presentation complete and linked
