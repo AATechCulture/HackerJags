@@ -13,17 +13,17 @@ We are modifying the American Airlines chatbot by having it curate effective and
 By reviewing customer experiences, American Airlines customers like and prefer using the chatbot there are issues when it comes to generating helpful and resourceful responses such as book suggestions or account help. 
 
 ## Tech Overview 💻
-**... what tech was used to bring this project to life?**
-
-Example:
-* FastAPI
-* Hugging Face AI Models
-* Next.js
+* HTML/CSS
+* JavaScript
+* Bootstrap
+  ~ API~
+  * Open AI
+  * Flight engine API
 
 
 ### ✨ Contributors ✨
-* Channijg Catchings  (L8JD280)
-* Kennedy Browne (AAdvantage No)
+* Channing Catchings  (L8JD280)
+* Kennedy Browne (N79WN22)
 * Murali Devi Katikala (T59RC78)
 * Kunal Janjirala (V49RC72)
 * Shwetha Ramadas (A0ld282)
@@ -35,7 +35,11 @@ Southern University and A&M College
 HackerJags
 
 ### Link to Video Pitch 📹
-**...point us to where you tell us about your solution 😄**
+
+
+https://github.com/AATechCulture/HackerJags/assets/118567338/75dd6cdf-399e-464d-b25c-edf681a4e3c5
+
+
 
 ### Link to Demo Presentation 📽
 [BE Smart Hackathon.pdf](https://github.com/AATechCulture/HackerJags/files/13257863/BE.Smart.Hackathon.pdf)
